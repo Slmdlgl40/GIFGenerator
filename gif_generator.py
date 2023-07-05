@@ -1,6 +1,5 @@
 import imageio
 from PIL import Image
-import pillow
 
 image_list = list()
 frames = list()
@@ -17,4 +16,4 @@ for image_path in image_list:
     resized_img = img.resize((400, 400))
     frames.append(resized_img)
 
-imageio.mimsave("animasyon.gif", frames, format="GIF", duration=1.5)
+imageio.mimsave("animasyon.gif", frames, format="GIF", duration=3)
